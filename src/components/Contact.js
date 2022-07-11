@@ -13,8 +13,8 @@ export default function Default() {
                 <p>Lets get in touch!</p>
                 <ul className="contact--container">
                     <li><a href="mailto:ouimetom@gmail.com"><FaEnvelope className="contact--icon"/></a></li>
-                    <li><a href="https://linkedin.com/in/tom-ouimet-128b46244" target="_blank"><FaLinkedin className="contact--icon"/></a></li>
-                    <li><a href="https://github.com/thouime"  target="_blank"><FaGithub className="contact--icon"/></a></li>
+                    <li><a href="https://linkedin.com/in/tom-ouimet-128b46244" target="_blank" rel="noreferrer"><FaLinkedin className="contact--icon"/></a></li>
+                    <li><a href="https://github.com/thouime" target="_blank" rel="noreferrer"><FaGithub className="contact--icon"/></a></li>
                 </ul>
             </div>
         </section>

@@ -1,22 +1,14 @@
-*,
-*::before,
-*::after {
+#quizzical--body {
   box-sizing: border-box;
   margin: 0;
-}
-
-#quizzical--body {
+  padding: 0;
   overflow: hidden;
   font-size: initial;
   background-color: white;
   color: #293264;
-  font-family: 'Inter', sans-serif;  
-  position: initial;
-  margin: initial;
-  padding: initial;
-  min-height: initial;
-  height: initial;
-  line-height: initial;
+  font-family: 'Inter', sans-serif;
+  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 #start-page {
@@ -43,6 +35,7 @@
   left: 0;
   bottom: 0;
   transform: translate(-20%, 25%);
+  overflow: hidden;
 }
 
 .header {

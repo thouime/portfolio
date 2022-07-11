@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-body {
+#quizzical--body {
   overflow: hidden;
   font-size: initial;
   background-color: white;

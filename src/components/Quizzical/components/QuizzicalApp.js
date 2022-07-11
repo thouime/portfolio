@@ -147,7 +147,7 @@ export default function Quizzical() {
   }
 
   return (
-    <div className={quizStarted ? "quiz--container" : undefined}>
+    <div id="quizzical--body" className={quizStarted ? "quiz--container" : undefined}>
       {setStyle()}
       {score === 5 && <Confetti />}
       <img className="img-blobs-lemony" src={blobsLemony} alt="Lemony Blob" style={quizStarted ? lemonStyle : undefined}/>

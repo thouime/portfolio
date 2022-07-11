@@ -1,0 +1,136 @@
+<!DOCTYPE Html>
+
+<style>
+    
+    html {
+        height: 5000px;
+    }
+
+    body {
+        background-color: #6f8fa9;
+        color: #2F446B;
+        display: grid;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    main {
+        background-color: #5CB0D3;
+        border-radius: 25px;
+    }
+
+    #title {
+        font-size: 2em;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+
+    #img-pie {
+        display: block;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #survey-form {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-row-gap: 15px;
+        margin: 50px;
+    }
+
+    .label {
+        text-align: left;
+    }
+
+    #radio_menu {
+        display: grid;
+        grid-template-columns: 1fr 15fr;
+        font-weight: normal;
+    }
+
+    #checkbox_menu {
+        display: grid;
+        grid-template-columns: 1fr 15fr;
+        font-weight: normal;
+    }
+
+</style>
+
+<html>
+    <body>
+        <main>
+            <h1 id="title">
+                Pie Evaluation
+            </h1>
+
+            <p id="description" class="description">
+                We want to know what you think about pie.
+            </p>
+
+            <p class="description">
+                Your thoughts could earn you a free slice!
+            </p>
+
+            <img id="img-pie" src="pie_clipart.png" alt="Pie">
+
+            <form id="survey-form">
+
+                <label id="name-label" class="label" for="name">Name: </label>
+                <input id="name" type="text" placeholder="Enter your name" required>
+                <label id="email-label" class="label" for="email">Email: </label>
+                <input id="email" type="email" placeholder="Enter your email" required>
+                <label id="number-label" for="age">Age: </label>
+                <input id="number" type="number" min="1" max="200" placeholder="Age">
+
+                <label for="dropdown">Favorite Type of Pie:</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="option1">Apple Pie</option>
+                    <option value="option2">Pumpkin Pie</option>
+                    <option value="option3">Cherry Pie</option>
+                    <option value="option4">Blueberry Pie</option>
+                    <option value="option5">Chicken Pot Pie</option>
+                </select>
+
+                <label for="radio">How often do you eat pie?</label>
+                <div id="radio_menu">
+                    <input type="radio" name="recommend" value="radio1">
+                    <label for="radio1">During holidays only.</label>
+                    <input type="radio" name="recommend" value="radio2">
+                    <label for="radio1">More than 5 times during any given year.</label>
+                    <input type="radio" name="recommend" value="radio3">
+                    <label for="radio1">More than 10 times during any given year.</label>
+                </div>
+                
+                <label for="checkbox_menu">What types of pie do you enjoy?</label>
+                <div id="checkbox_menu">
+                    <input type="checkbox" id="checkbox1" value="Pie1">
+                    <label for="checkbox1">Fruit Pies</label>
+                    <input type="checkbox" id="checkbox2" value="Pie2">
+                    <label for="checkbox2">Meat Pies</label>
+                    <input type="checkbox" id="checkbox3" value="Pie3">
+                    <label for="checkbox3">Novelty Pies like Cheesecake.</label>
+                    <input type="checkbox" id="checkbox4" value="Pie4">
+                    <label for="checkbox4">Quiche or other egg-based pies.</label>
+                </div>
+
+                <label for="text_are">How would you rate your typical experience with eating a pie and why?</label>
+                <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+
+                <button id="submit" type="submit">Submit Form</button>
+
+            </form>
+
+        </main>
+    </body>
+
+</html>

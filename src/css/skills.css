@@ -1,0 +1,97 @@
+.dome-container {
+    display: inline-block;
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.dome {
+    --r: 20vmin;
+    /* circle radius */
+    --t: 3;
+    /* number of skills */
+    position: relative;
+    --w: calc(var(--r) * 1.2);
+    width: calc(2 * var(--w));
+    height: calc(2 * var(--w));
+    margin: 0;
+    padding: 0;
+    animation: rotate 10s linear infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dome::before {
+    content: '';
+    width: calc(2 * var(--r));
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(var(--r) * 0.2);
+    left: calc(var(--r) * 0.2);
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.skill {
+    height: calc(var(--r) * 1.2);
+    width: calc(var(--r) / 5);
+    position: absolute;
+    bottom: var(--w);
+    left: calc(var(--w) - (0.5 * var(--r) / 5));
+    transform-origin: center bottom;
+    transform: rotate(calc(var(--n) * 22.5deg));
+    position: absolute;
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.skill:nth-child(1) {
+    --n: 1;
+}
+  
+.skill:nth-child(2) {
+    --n: 4;
+}
+  
+.skill:nth-child(3) {
+    --n: 7;
+}
+
+.skill:nth-child(4) {
+    --n: 10;
+} 
+
+.skill:nth-child(5) {
+    --n: 14;
+}
+
+@media (min-width:320px)  { 
+    .skill {
+        height: calc(var(--r) * 1.2);
+        width: calc(var(--r) / 2.5);
+    }
+}
+
+
+@media (min-width:961px)  { 
+    .skill {
+        height: calc(var(--r) * 1.2);
+        width: calc(var(--r) / 3.5);
+    }
+}

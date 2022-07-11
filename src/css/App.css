@@ -241,12 +241,14 @@ section {
   width: 85%;
   text-align: left;
   justify-content: center;
+  gap: 2rem;
 }
 
 .intro--underline {
   text-decoration: underline;
   text-decoration-thickness: 0.15rem;
   text-decoration-color: var(--clr-accent);
+  margin: auto;
 }
 
 .intro--container > img {

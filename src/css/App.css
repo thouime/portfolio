@@ -103,6 +103,8 @@ section {
 }
 
 .header--underline {
+  display: block;
+  margin: auto;
   margin-top: 0;
   border: none;
   border-bottom: 0.188rem solid var(--clr-accent);

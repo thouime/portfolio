@@ -1,0 +1,369 @@
+<!-- ToDo:
+
+Page Style and colors
+adding python doc content to the page
+check requirements 
+Corresponding text for each nav link 
+-->
+
+<!DOCTYPE html>
+
+<style>
+    body {
+        height: 3000px;
+        background-color: #27232B;
+        color: #2BC542;
+    }
+
+    #navbar {
+        background-color: #7AA29D;
+        color: #27232B;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        height: 90%;
+        border: 2px solid #27232B;
+        margin: 2%;
+        border-radius: 15% / 50%;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    #navbar header {
+        text-align: center;
+    }
+
+    #navbar ul {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    #navbar li {
+        margin-left: 0px;
+        border-top: 2px solid #27232B;
+        border-bottom: 2px solid #27232B;
+        outline: 2px solid #27232B;
+        list-style: none;
+    }
+
+    #navbar a {
+        display: block;
+        text-decoration: none;
+        color: #27232B;
+        cursor: pointer;
+        padding: 10px 30px;
+    }
+
+    #doc-title {
+        margin-left: 25%;
+        text-align: center;
+    }
+
+    #main-doc {
+        background-color: #27232B;
+        position: absolute;
+        margin-left: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 70vw;
+        z-index: 0;
+    }
+
+    .section-header {
+        padding-top: 20px;
+        font-size: 30px;
+        border-bottom: 2px solid #7AA29D;
+    }
+
+    code {
+        background-color: #7AA29D;
+        color: #27232B;
+        display: block;
+        white-space: pre;
+        padding-left: 25px;
+    }
+
+
+    @media (max-width: 600px) {
+        #navbar {
+            top: 0;
+            margin: 0;
+            width: 95%;
+            height: auto;
+        }
+        #navbar ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0;
+            padding-top: 0;
+            border: 0;
+        }
+        #navbar li {
+            display: flex;
+            width: 100px;
+            height: 50px;
+            padding: 0;
+            border: 1px solid #27232B;
+            outline: 1px solid #27232B;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar a {
+            list-style: none;
+            padding: 0;
+        }
+        #doc-title {
+            margin: 0;
+            margin-top: 225px;
+            padding-bottom: 0;
+        }
+        #main-doc {
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+
+</style>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Python Documentation Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <!-- Navigation Bar Fixed to the Left of the Screen -->
+        <nav id="navbar">
+            <header>
+                <h1>Python Documentation</h1>
+            </header>
+            <ul>
+                <li><a href="#Why_Python?" class="nav-link">Why Python?</a></li>
+                <li><a href="#variables" class="nav-link">Variables</a></li>
+                <li><a href="#if_statements" class="nav-link">If Statements</a></li>
+                <li><a href="#while_loops" class="nav-link">While Loops</a></li>
+                <li><a href="#functions" class="nav-link">Functions</a></li>
+            </ul>
+        </nav>
+    </head>
+    <body>
+        <h1 id="doc-title">Beginner Python Documentation</h1>
+        <main id="main-doc">
+            <!-- Technical Documentation -->
+            <section id="Why_Python?" class="main-section">
+                <header class="section-header">
+                    Why Python?
+                </header>
+                <p>
+                    Python is a wonderful language to start learning programming with because it's simple.
+                    The language is not complicated, it's straight to the point without excess, and syntax
+                    is easy to read for beginners to programming.
+                </p>
+                <p>
+                    A common problem when faced with the task of learning a programming language is weaving in and out of
+                    using and learning the syntax. This becomes a problem of causing confusion with learning a language
+                    that should really have the priority of learning the concepts more than focusing too much on the syntax.
+                </p>
+                
+                <p>
+                    Below is a code snippet from Java that prints out a name, Frank, to the console.
+                </p>
+
+                <code>
+
+public class PrintName {
+
+    public static void main(String[] args) {
+        // Set the name variable to frank
+        String name = "Frank";
+
+        // Print out the name
+        System.out.println(name);
+    }
+
+}
+
+                </code>
+
+                <p>
+                    In comparison, below is some code from python and performs the same function that's easier to read and understand.
+                </p>
+
+                <code>
+                    
+# variable that contains a name
+name = "Frank"
+
+# Print out the name
+print(name)
+                    
+                </code>
+
+            </section>
+            <section id="variables" class="main-section">
+                <header class="section-header">
+                    Variables
+                </header>
+                <p>
+                    Variables are containers that hold information that can be changed or used throughout your code.
+                </p>
+                <p>
+                    Variables can hold different types of information that include:
+                </p>
+                <p>
+                    <u>Variable Types:</u>
+                </p>
+                <ul>
+                    <li>Integers: Numbers.</li>
+                    <li>Strings: A series of characters making up a word or multiple words.</li>
+                    <li>Booleans: A type of variable that can be either set to True or False.</li>
+                    <li>Lists: A list of multiple variables grouped together.</li>
+                    <li>Tuple: A group of items that are ordered and cannot be changed later.</li>
+                    <li>Dictionary: A group of items that are paired together each with a key and a vlue. </li>
+                </ul>
+                <p>
+                    Seen below is an example of basic variables been created and used to print out information.
+                </p>
+                <code>
+# Holds a String
+carName = "Honda Civic"
+
+# Holds an Integer (or a whole number)
+carMaxSpeed = 120
+
+# Holds a list of things
+carList = ["Honda Civic", "Chevy Colorado", "Ford Mustang"]
+
+# A sentence with the variable added at the end.
+print("The car is a " + carName)
+
+# A sentence showcasing the carMaxSpeed variable
+print("The maximum speed of the car is: " + carMaxSpeed)
+
+# Printing out the first item in the list.
+print(carList[0])
+                </code>
+            </section>
+            <section id="if_statements" class="main-section">
+                <header class="section-header"> 
+                    If Statements
+                </header>
+                <p>
+                    If statements are statements that first check to see if a condition is true and then
+                    perform specific functionality if it is true.
+                </p>
+                <p>
+                    This can be used to perform various functionality that requires a condition to be met. 
+                    The syntax is as followed.
+                </p>
+                <code>
+if numberBeingChecked == otherNumber:
+    print("The number being checked is the same as the otherNumber!")
+                </code>
+                <p>
+                    In a number guessing game you could check to see if the correct number was guessed and 
+                    print out a congratulatory statement.
+                </p>                
+                <code>
+# The magic number
+winningNumber = 7
+
+# Store the number the user typed
+guessedNumber = input("Enter a number between 1 and 10")
+
+if(guessedNumber == winningNumber):
+    print("Congratulations you guessed the magic number!")
+# Else performs the following code if the above statement is not true.
+else:
+    print("Sorry! That is not the magic number.")
+                </code>
+            </section>
+            <section  id="while_loops" class="main-section">
+                <header class="section-header">
+                    While Loops
+                </header>
+                <p>
+                   While loops are a type of loop that repeats the code contained inside
+                   until a certain condition is met that stops it from looping.
+                </p>
+                <p>
+                    The syntax for a while loop is as follows:
+                </p>
+                <code>
+while(condition < maxLoopAmount):
+    print("This text will print repeatedly until the condition is met.")
+                </code>
+                <p>
+                    You can use a while loop in the previous guessing game we created to keep looping 
+                    until the player correctly guesses the magic number.
+                </p>                
+                <code>
+# The magic number
+winningNumber = 7
+
+# Store the number the user typed
+guessedNumber = input("Enter a number between 1 and 10")
+
+# A boolean variable that holds either a true or false value
+# In this case a false variable until the player wins the game
+playerWin = False
+
+# Will continue looping until playerWin is set to True
+while(playerWin == False):
+    if(guessedNumber == winningNumber):
+        print("Congratulations you guessed the magic number!")
+        # Set playerWin to true now since the player won so the game will end
+        playerWin = True
+    # Else performs the following code if the above statement is not true.
+    else:
+        print("Sorry! That is not the magic number.")
+                </code>
+            </section>
+            <section id="functions" class="main-section">
+                <header class="section-header">
+                    Functions
+                </header>
+                <p>
+                    Functions are entire chunks of code that you can contain inside what's known as
+                    a function so that you can reuse them without having to write the same code.
+                </p>
+                <p>
+                    A function has the following syntax: 
+                </p>
+                <code>
+def my_new_function():
+    print("The new function has been activated!")
+
+my_new_function()
+                </code>
+                <p>
+                    The def is short for define and is required when creation a function.
+                    The parenthesis () can be used to send information to the function if needed. In this case
+                    it is empty because we aren't sending it any information. We're simply running the code inside
+                    the function any time it's called. Underneath the function is the syntax for calling the 
+                    function so that you can use it. You simply need the name and the parenthesis. If the parenthesis
+                    requires information to be sent you must include that too. Below is an example of the 
+                    parenthesis containing variables for sending information.
+                </p>
+                <code>
+def my_new_function(printThisToo):
+    print("The new function has been activated!")
+    print(printThisToo)
+
+my_new_function("I like pie")
+                </code>
+                <p>
+                    Adding the variable printThisToo will hold whatever information is placed in the parenthesis
+                    when the function is called.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

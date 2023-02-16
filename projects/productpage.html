@@ -1,0 +1,250 @@
+<!DOCTYPE Html>
+
+<style> 
+
+    body {
+        background-color: #253231;
+        color: #253231;
+        height: 3000px;
+    }
+
+    @media (max-width: 1200px) {
+        #recipe-cards {
+            flex-direction: column;
+        }
+    }
+
+    #header {
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* grid-template-columns: 30% auto; */
+    }
+
+    #nav-bar {
+        background-color: #f29773;
+    }
+
+    #howitsmade-header {
+        margin-top: 35px;
+    }
+
+    nav > ul {
+        width: 35vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #3D4741;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    #header-img {
+        margin-left: 50px;
+        border: 2px solid;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
+    h2 {
+        color: #f29773;
+        text-decoration: underline;
+    }
+
+    #content {
+        color: #F6F5F1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 15px;
+    }
+
+    .header-font {
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+
+    #recipes-top {
+        margin-top: 75px; 
+        text-align: center;
+    }
+
+    #recipe-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 15px;
+    }
+    #recipe-cards > div {
+        padding: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: 3px solid #8C8C8B;
+        background-color: #CBBA90;
+        color: #3D4741;
+    }
+    #recipe-cards > div > h3 {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #878887;
+        color: #F6F5F1;
+        border-radius: 25px;
+    }
+    #recipe-cards > div > ul {
+        padding-left: 20px;
+        width: 250px;
+    }    
+
+    #recipe-cards > div > ol {
+        padding-left: 20px;
+        width: 250px;
+    }
+
+    #orderpie-header {
+        margin-top: 35px;
+    }
+
+
+</style>
+
+<html>
+    <body>
+        <main>
+
+            <header id="header">
+                <img src="https://graphicdesignbylisa.com/wp-content/uploads/generic-logo.jpg" id="header-img" alt="company logo"  height="75">
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a href="#howitsmade" class="nav-link">How It's Made</a></li>
+                        <li><a href="#recipes" class="nav-link">Recipes</a></li>
+                        <li><a href="#orderpie" class="nav-link">Order a Pie</a></li>
+                    </ul>
+                </nav>
+                
+
+            </header>
+            
+            <div id="content">
+                <p id="howitsmade"></p>
+                <h2 id="howitsmade-header"> How it's made </h2>
+                <p> The process of the making of pie, shown below.</p>
+
+                <iframe id="video" width="480" height="360" src="https://www.youtube.com/embed/yjMVtHPhfqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                <div id="recipes">
+                    <h2 id="recipes-top" class="header-font">Recipes</h2>
+                    <div id ="recipe-cards">
+                        <div id="blueberrypie">
+                        <h3>Blueberry Pie</h3>
+                            <h4>Ingredients:</h4>
+                            <ul>
+                                <li>4 Cups of Fresh Blueberries</li> 
+                                <li>1 Tablespoon of Butter</li>
+                                <li>3/4 Cup of White Sugar</li>
+                                <li>3 Tablespoons of Cornstarch</li>
+                                <li>1/4 Teaspoon of Salt</li>
+                                <li>1/2 Teaspoons of Ground Cinnamon</li>
+                                <li>1 Recipe Pastry for 9 Inch Double Crust Pie</li>
+
+                            </ul>
+                            <h4>Instructions:</h4>
+                            <ol>
+                                <li>Preheat oven to 375 Degrees Fahrenheit</li>
+                                <li>Mix sugar, cornstarch, salt, and cinnamon, and sprinkle over blueberries.</li> 
+                                <li>Line pie dish with one pie crust. Pour berry mixture into the crust, and dot with butter. Cut remaining pastry into 1/2 - 3/4 inch wide strips, and make lattice top. Crimp and flute edges.</li>
+                                <li>Bake pie on lower shelf of oven for about 50 minutes, or until crust is golden brown.</li>
+                                <li>Eat the pie!</li>
+                            </ol>
+
+                        </div>                    
+                        <div id="bananapie">
+                            <h3>Banana Pie</h3>
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>¾ cup white sugar</li>
+                                    <li>2 cups milk</li> 
+                                    <li>⅓ cup all-purpose flour</li>
+                                    <li>¼ teaspoon salt</li>
+                                    <li>3 egg yolks, beaten</li>
+                                    <li>4 bananas, sliced</li>
+                                    <li>¼ teaspoons vanilla extract</li>
+                                    <li>1 (9 inch) baked pastry shell, cooled</li>
+                                    <li>2 tablespoons butter</li>
+                                </ul>
+                                <h4>Instructions:</h4>
+                                <ol>
+                                    <li>In a saucepan, combine the sugar, flour, and salt. 
+                                        Add milk in gradually while stirring gently. 
+                                        Cook over medium heat, stirring constantly, 
+                                        until the mixture is bubbly. Keep stirring and cook for about 2 more minutes, 
+                                        and then remove from the burner.</li>
+                                    <li>Stir a small quantity of the hot mixture into the beaten egg yolks, 
+                                        and immediately add egg yolk mixture to the rest of the hot mixture. 
+                                        Cook for 2 more minutes; remember to keep stirring. Remove the mixture from the stove, 
+                                        and add butter and vanilla. Stir until the whole thing has a smooth consistency.</li> 
+                                    <li>Slice bananas into the cooled baked pastry shell. Top with pudding mixture.</li>
+                                    <li>Bake at 350 degrees F (175 degrees C) for 12 to 15 minutes. Chill for an hour.</li>
+                                    <li>Enjoy a delicious pie.</li>
+                                </ol>
+                        </div>                 
+                        <div id="pumpkinpie">
+                            <h3>Pumpkin Pie</h3>
+                                <h4>Ingredients:</h4>
+                                <ul>
+                                    <li>1 (9 inch) unbaked pie crust</li>
+                                    <li>½ teaspoon salt</li> 
+                                    <li>1 (15 ounce) can pumpkin</li>
+                                    <li>1 (14 ounce) can Sweetened Condensed Milk</li>
+                                    <li>½ teaspoon ground nutmeg</li>
+                                    <li>2 large eggs large eggs</li>
+                                    <li>½ teaspoon ground ginger</li>
+                                    <li>1 teaspoon ground cinnamon</li>
+                                </ul>
+                                <h4>Instructions:</h4>
+                                <ol>
+                                    <li>Preheat oven to 425 degrees F. Whisk pumpkin, 
+                                        sweetened condensed milk, eggs, spices 
+                                        and salt in medium bowl until smooth. 
+                                        Pour into crust. Bake 15 minutes.</li>
+                                    <li>Reduce oven temperature to 350 degrees F and 
+                                        continue baking 35 to 40 minutes or until knife 
+                                        inserted 1 inch from crust comes out clean. Cool. 
+                                        Garnish as desired. Store leftovers covered in refrigerator.</li> 
+                                    <li>Serve and enjoy!</li>
+                                </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="orderpie"></p>
+
+                <h2 id="orderpie-header" class="header-font">Enter email below to begin ordering.</h2>
+
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <label id="email-label" class="label" for="email">Email: </label>
+                    <input name="email" id="email" type="email" placeholder="Enter your email" required>
+                    <input id="submit" type="submit" value="Submit"></input>
+                </form>
+
+            </div>
+        </main>
+    </body>
+</html>

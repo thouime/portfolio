@@ -141,7 +141,7 @@ export default function Quizzical() {
   }
 
   function setStyle() {
-    if(window?.location.pathname === '/quizzical') {
+    if(window.location.pathname === '/quizzical') {
       require('../../../css/QuizzicalApp.css');
     }
   }

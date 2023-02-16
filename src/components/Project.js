@@ -25,7 +25,7 @@ export default function Project() {
                     <img
                         className="project--img"
                         alt="gallery"
-                        src={require(`../images/${project.image}`)}
+                        src={require(`../images/${project.image}`).default}
                         key={(`../images/${project.image}`)}
                     />
                     <img 

@@ -11,7 +11,7 @@ root.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="quizzical" element={<QuizzicalApp />} />
+        <Route path="/quizzical" element={<QuizzicalApp />} />
       </Routes>     
     </BrowserRouter> 
   </React.StrictMode>

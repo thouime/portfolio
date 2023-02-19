@@ -85,7 +85,7 @@ export default function Project() {
         );
         return project.react ? (
             <Link 
-                to={ project.link }
+                to={project.link}
                 key={`../images/${project.image}`}
                 target="_blank"
                 >
@@ -93,7 +93,7 @@ export default function Project() {
             </Link>
         ) : (
             <a 
-                href={`../../projects/${project.link}`} 
+                href={`/projects/${project.link}`} 
                 key={`../images/${project.image}`} 
                 target="_blank" 
                 rel="noopener noreferrer"

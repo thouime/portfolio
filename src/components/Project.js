@@ -92,21 +92,14 @@ export default function Project() {
                 {projectCards}
             </Link>
         ) : (
-            // <a 
-            //     href={`/projects/${project.link}`} 
-            //     key={`../images/${project.image}`} 
-            //     target="_blank" 
-            //     rel="noopener noreferrer"
-            // >
-            //     {projectCards}
-            // </a>
-            <Link 
-                to={`/projects/project.link`}
-                key={`../images/${project.image}`}
-                target="_blank"
+            <a 
+                href={`projects/${project.link}`} 
+                key={`../images/${project.image}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
             >
                 {projectCards}
-            </Link>
+            </a>
         )
     });
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Toggle from "./Toggle";
+import { HashLink } from 'react-router-hash-link';
 
 export default function Header(props) {
 
@@ -45,7 +46,7 @@ export default function Header(props) {
 
     return (
         <nav className="nav">
-            <p className="nav__author"><a href="/">Tom Ouimet</a></p>
+            <p className="nav__author"><HashLink to="#">Tom Ouimet</HashLink></p>
             <ul className='nav__links'>
                 <Toggle setSvg={props.setSvg}/>
                 {navBar}
@@ -57,13 +58,13 @@ export default function Header(props) {
 function NavLink(props) {
     return (
         <li>
-            <a 
-                href={`#${props.linkText.toString().toLowerCase()}`}
+            <HashLink 
+                to={`#${props.linkText.toString().toLowerCase()}`}
                 className={props.isActive ? 'nav--active' : 'nav--default'}
                 onClick={props.setActive}
             >
                 {props.linkText}
-            </a>
+            </HashLink>
         </li>
     )
 }

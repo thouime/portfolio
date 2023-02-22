@@ -141,13 +141,13 @@ export default function Quizzical() {
   }
 
   function setStyle() {
-    if(window.location.pathname === '/quizzical') {
+    if(window.location.hash.includes('quizzical')) {
       require('../../../css/QuizzicalApp.css');
     }
   }
 
   return (
-    <div id="quizzical--body" className={quizStarted ? "quiz--container" : undefined}>
+    <div id="quizzical-body" className={quizStarted ? "quiz--container" : undefined}>
       {setStyle()}
       {score === 5 && <Confetti />}
       <img className="img-blobs-lemony" src={blobsLemony} alt="Lemony Blob" style={quizStarted ? lemonStyle : undefined}/>

@@ -1,6 +1,7 @@
 // Intro Page about myself
 // Short introduction that helps me stand out
 import React from "react";
+import { HashLink } from 'react-router-hash-link';
 
 export default function Intro() {
     const svgDir = require.context('../../src/svg');
@@ -12,8 +13,8 @@ export default function Intro() {
                     <h1><span className="intro--underline">Hello</span>, I'm Tom.</h1>
                     <h2>Full Stack Developer building simple, elegant websites.</h2>
                     <div className="intro--buttons">
-                        <button><a href="#project">My Work</a></button>
-                        <button><a href="#contact">Contact Me</a></button>
+                        <button><HashLink to="#project">My Work</HashLink></button>
+                        <button><HashLink to="#contact">Contact Me</HashLink></button>
                     </div>
                 </div>
                 <img

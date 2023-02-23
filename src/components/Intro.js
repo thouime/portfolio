@@ -10,8 +10,8 @@ export default function Intro() {
         <section className="intro">
             <div className="intro--container">
                 <div className="intro--description">
-                    <h1><span className="intro--underline">Hello</span>, I'm Tom.</h1>
-                    <h2>Full Stack Developer building simple, elegant websites.</h2>
+                    <h1 className="svg--text"><span className="intro--underline">Hello</span>, I'm Tom.</h1>
+                    <h2 className="svg--text">Full Stack Developer building simple, elegant websites.</h2>
                     <div className="intro--buttons">
                         <button><HashLink to="#project">My Work</HashLink></button>
                         <button><HashLink to="#contact">Contact Me</HashLink></button>

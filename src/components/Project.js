@@ -44,7 +44,7 @@ export default function Project() {
             </div>
         );
 
-        return project.react ? (
+        return project.type === "react" ? (
             <Link 
                 to={project.link}
                 key={`../images/${project.image}`}
@@ -52,6 +52,15 @@ export default function Project() {
             >
                 {projectCards}
             </Link>
+        ) : project.type === "external" ? (
+            <a
+                href={project.link}
+                key={`../images/${project.image}`}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                {projectCards}
+            </a>
         ) : (
             <a 
                 href={`projects/${project.link}`} 

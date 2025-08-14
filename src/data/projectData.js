@@ -8,7 +8,7 @@ export const projects = [
         link: "quizzical",
         svg: "quiz.svg",
         skills: ["html", "css", "react"],
-        react: true
+        type: "react"
     },
     {
         title: "Survey Form",
@@ -19,7 +19,7 @@ export const projects = [
         link: "surveyform.html",
         svg: "forms.svg",
         skills: ["html", "css"],
-        react: false
+        type: "local"
     },
     {
         title: "Document Page",
@@ -31,10 +31,10 @@ export const projects = [
         link: "docpage.html",
         svg: "terms.svg",
         skills: ["html", "css"],
-        react: false
+        type: "local"
     },
     {
-        title: "Tribue Page",
+        title: "Tribute Page",
         subtitle: "HTMl and CSS",
         description:
             `A tribue page showing history and trivia.`,
@@ -42,7 +42,7 @@ export const projects = [
         link: "tributepage.html",
         svg: "thought.svg",
         skills: ["html", "css"],
-        react: false
+        type: "local"
     },
     {
         title: "Product Page",
@@ -54,6 +54,19 @@ export const projects = [
         link: "productpage.html",
         svg: "factory.svg",
         skills: ["html", "css"],
-        react: false
+        type: "local"
+    },    
+    {
+        title: "Game Project: Skydle",
+        subtitle: "Godot and GDScript",
+        description:
+            `This game combines Skyblock concepts, Idling, and elements of incremental growth. 
+            Developing this project allowed me to practice programming and 
+            project management skills while building something I’ll enjoy.`,
+        image: "skydle.png",
+        link: "https://github.com/thouime/incrementalgame",
+        svg: "godot.svg",
+        skills: ["godot"],
+        type: "external"
     }
 ]

@@ -22,3 +22,20 @@ This is my personal portfolio showcasing various web projects I have created. Th
 ## Product Page
 - A mock template of a product page that compiles basic navigation, an embedded video, and recipes
 - Skills used: HTML, CSS
+
+## Game Project: Skydle
+- This game combines Skyblock concepts, passive resource accumulation through Idling, and elements of incremental growth and automation, with a touch of collecting. The goal is to create a unique blend that doesn’t exist in one game yet.
+
+- Developing this project allowed me to practice programming and project management skills while building something I’ll enjoy.
+
+- Features
+  - Expand your island by gathering materials.
+  - Explore other islands to upgrade your character and conquer the skies.
+  - Automate processes for resource gathering.
+  - Collection System
+  - Inventory System
+  - Crafting System
+  - Building System for adding tiles to the world during gameplay
+  - Automation for gathering materials
+  - Equipment System
+  - Dungeons and Auto Combat

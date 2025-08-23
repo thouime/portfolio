@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "843cc43baea5fbcc07b4",
-    "url": "/portfolio/static/css/main.8e5a632a.chunk.css"
+    "revision": "a48802a5bfd08c51e240",
+    "url": "/portfolio/static/css/main.c714805f.chunk.css"
   },
   {
-    "revision": "843cc43baea5fbcc07b4",
-    "url": "/portfolio/static/js/main.843cc43b.chunk.js"
+    "revision": "a48802a5bfd08c51e240",
+    "url": "/portfolio/static/js/main.a48802a5.chunk.js"
   },
   {
-    "revision": "2abded89887e86813110",
-    "url": "/portfolio/static/js/1.2abded89.chunk.js"
+    "revision": "2abda701958dfe708c8e",
+    "url": "/portfolio/static/js/1.2abda701.chunk.js"
   },
   {
-    "revision": "125b39cffaeb0987e770",
-    "url": "/portfolio/static/js/2.125b39cf.chunk.js"
+    "revision": "536b9b609e1e4b6a8f0e",
+    "url": "/portfolio/static/js/2.536b9b60.chunk.js"
   },
   {
-    "revision": "47ec08afe343e767ec35",
-    "url": "/portfolio/static/js/runtime~main.47ec08af.js"
+    "revision": "70a8546f73b214952544",
+    "url": "/portfolio/static/js/runtime~main.70a8546f.js"
   },
   {
     "revision": "f727b25366484ce385174a50d56bb629",
@@ -56,6 +56,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/forms.8d4fd02d.svg"
   },
   {
+    "revision": "453005051eb1ce53ce1a59aa0e565a02",
+    "url": "/portfolio/static/media/godot.45300505.svg"
+  },
+  {
     "revision": "b76dda1be5da3a74acac388a37a5ecc6",
     "url": "/portfolio/static/media/programming.b76dda1b.svg"
   },
@@ -84,6 +88,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/quizzical.9df1f51b.gif"
   },
   {
+    "revision": "a6ddd45a4c5dffde0ec2dcde9d7ca113",
+    "url": "/portfolio/static/media/skydle.aea1b1d8.png"
+  },
+  {
     "revision": "3364b5570482832dd02946d9a579c455",
     "url": "/portfolio/static/media/surveyform.a6793a22.gif"
   },
@@ -92,7 +100,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/tributepage.1a9b6ec0.png"
   },
   {
-    "revision": "394ab342097c7dcf7d037e7355309de1",
+    "revision": "b0bcddf2354ab8aca2b72ef79e2412e3",
     "url": "/portfolio/index.html"
   }
 ];
